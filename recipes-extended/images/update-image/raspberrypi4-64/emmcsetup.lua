@@ -72,7 +72,7 @@ function preinst()
 	out = os.capture("/usr/sbin/sfdisk --force " .. eMMC .. " < /tmp/partitions")
 
 	-- use partprobe to inform the kernel of the new partitions
-
+	
 	cmdexec("/usr/sbin/partprobe " .. eMMC)
 
 	return true, out

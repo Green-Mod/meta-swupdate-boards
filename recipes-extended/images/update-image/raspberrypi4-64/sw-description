@@ -10,7 +10,7 @@ software =
 					{
 						filename = "core-image-full-cmdline-raspberrypi4-64.ext4.gz";
 						type = "raw";
-						compressed = "zlib";
+						compressed = true;
 						device = "/dev/mmcblk0p2";
 					}
 				);
@@ -33,7 +33,7 @@ software =
 					{
 						filename = "core-image-full-cmdline-raspberrypi4-64.ext4.gz";
 						type = "raw";
-						compressed = "zlib";
+						compressed = true;
 						device = "/dev/mmcblk0p3";
 					}
 				);

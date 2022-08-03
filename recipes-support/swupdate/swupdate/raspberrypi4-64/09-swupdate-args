@@ -1,4 +1,4 @@
-rootfs=`swupdate -g`
+rootfs=`mount | grep "on / type" | cut -d':' -f 2 | cut -d' ' -f 1`
 
 if [ $rootfs == '/dev/mmcblk0p2' ];then
 	selection="-e stable,copy2"
