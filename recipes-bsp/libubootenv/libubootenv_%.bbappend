@@ -1,6 +1,7 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
 SRC_URI_append = " file://fw_env.config"
+RPROVIDES_${PN} += "u-boot-default-env"
 
 do_install_append() {
 	install -d ${D}${sysconfdir}
